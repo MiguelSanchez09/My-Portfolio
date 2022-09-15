@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 /* Main Styling */
 html, 
 body {
@@ -14,8 +15,13 @@ body {
     color: #4d4d4d;
 }
 
-h1 {
-    font-size: 2.5rem;
+
+.container__logo {
+    font-size: 1rem;
+}
+
+.container__title {
+    font-size: 1.5rem;
 }
 
 h2{
@@ -23,39 +29,57 @@ h2{
     font-weight: 500;
 }
 
+
 h4 {
     font-size: 1.5rem;
 }
+
+
  p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 10px 0;
     line-height: 1.7em;
     font-weight: 300;
  }
+
+
  a {
     text-decoration: none;
     color: black;
  }
 
+.showcase__row__title {
+    width: 70%;
+}
+
 /* Utility Classes */
 .container {
     margin: auto;
     max-width: 1300px;
-    overflow: auto;
     padding: 0 20px;
 }
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 .large {
     font-size: 1.25rem;
 }
 
+
 .txt-orange {
     color: #e9a075;
 }
 
-.display-1 {
+
+.display__a {
     font-size: 4rem;
 }
+
 
 .btn {
     display: inline-block;
@@ -66,31 +90,37 @@ h4 {
     border-radius: 4px;
 }
 
-.btn-round {
+
+.btn__round {
     border-radius: 20px;
 }
 
-.btn-dark {
+
+.btn__dark {
     background: #e9a075;
     border: 1px solid #e9a075;
     color: #fff;
 }
 
-.btn-dark:hover {
+
+.btn__dark:hover {
     background: #d19069;
     color: #fff;
 }
 
-form label {
+
+.form__label {
     display: inline-block;
     margin-bottom: 6px;
 }
 
-form .form-group {
+
+.form__group {
     margin-bottom: 16px;
 }
 
-form .form-control {
+
+.form__control {
     display: block;
     width: 100%;
     padding: 7px 12px;
@@ -102,11 +132,15 @@ form .form-control {
     border-radius: 4px;
 }
 
+
 /* Mainheader */
 #mainheader {
     background: radial-gradient(at 10% 10px, #e9a075, #fff, #fff);
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
+
 
 /* Navbar */
 #navbar {
@@ -116,9 +150,11 @@ form .form-control {
     padding-bottom: 20px;
 }
 
+
 #navbar ul {
     color: #4d4d4d;
 }
+
 
 #navbar .logo {
     float: left;
@@ -126,14 +162,17 @@ form .form-control {
     font-size: 25px;
 }
 
+
 #navbar ul {
     list-style: none;
     float: right;
 }
 
+
 #navbar ul li {
     float: left;
 }
+
 
 #navbar ul li a {
     display: block;
@@ -141,35 +180,41 @@ form .form-control {
     text-align: center;
 }
 
+
 #navbar ul li a:hover {
     color: #d19069;
 }
+
 
 /* Showcase */
 #showcase {
     padding: 80px 0px;
 }
 
-.showcase-row-img img {
+
+.showcase__img {
     width: 100%;
-    height: 70%;
+    height: 100%;
     border-radius: 5%;
 }
 
-.showcase-row {
+
+.showcase__row {
     display: flex;
-    padding: 150px 0;
 }
 
-.showcase-row-tittle p.large {
+
+.showcase__row__title p.large {
     padding-bottom: 15px;
 }
+
  
 /* Portfolio */
 #portfolio {
     padding: 80px 0;
     text-align: center;
 }
+
 
 #portfolio p {
     width: 500px;
@@ -178,7 +223,8 @@ form .form-control {
     padding-bottom: 50px;
 }
 
-.portfolio-row {
+
+.portfolio__row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -186,12 +232,13 @@ form .form-control {
     grid-row-gap: 0px;
 }
 
-.portfolio-row img {
+
+.portfolio__row img {
     width: 100%;
-    height: 250px;
     padding: 10px;
     border-radius: 20px;
 }
+
 
 /* About Me */
 #about {
@@ -199,22 +246,28 @@ form .form-control {
     text-align: center;
 }
 
+
 #about h2 {
     padding-bottom: 50px;
 }
 
+
 #about p {
     padding-bottom: 20px;
 }
+
 
 /* Contact */
 #contact {
     padding: 80px 0;
 }
 
+
 #contact h2 {
     text-align: center;
 }
+
+
  #contact p {
     width: 500px;
     margin: 0 auto;
@@ -222,35 +275,42 @@ form .form-control {
     padding-bottom: 50px;
  }
 
- .contact-row {
+
+ .contact__row {
     display: flex;
     padding: 20px;
  }
 
- .contact-row-img {
-    width: 50%;
+
+ .contact__row__img {
+    width: 80%;
  }
 
- .contact-row-img img {
+
+ .contact__row__img img {
     width: 100%;
-    padding: 120px;
+    padding: 150px;
  }
 
- .contact-row-form {
+
+ .contact__row__form {
     width: 50%;
     border: 1px solid #c4c4c4;
     border-radius: 10px;
-    padding: 70px;
+    padding: 50px;
  }
 
- .contact-row-form h4 {
+
+ .contact__row__form h4 {
     padding-bottom: 40px;
     text-align: center;
  }
 
- .contact-row-form button {
+
+ .contact__row__form button {
     width: 100%;
  }
+
 
  /* Footer */
  #mainfooter {
@@ -259,14 +319,15 @@ form .form-control {
     background-color: #e9a075;
  }
 
- .footer_container {
+
+ .footer__container {
     display: flex;
     align-items: center;
     justify-content: center;
-    
- }
+}
 
- .footer_container img {
+
+ .footer__container img {
     width: 25px;
     height: 25px;
     margin-right: 10px;
